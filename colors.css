@@ -1,0 +1,67 @@
+:root {
+
+    /* Main Layout Boxes */
+    --body-bg-color: #ffffff;
+    --main-bg-color: #fff;
+    --header-bg-color: cadetblue;
+    --footer-bg-color: #444;
+    --aside-bg-color: aliceblue;
+    --primary-nav-bg-color: #444;
+    --footer-nav-bg-color: #ffffff;
+
+
+    /* Text Colors */
+    --bodytext-color: #444;
+    --titles-color: #444;
+    --subtitles-color: #b11111;
+    --sub-subtitles-color: #444;
+
+
+    /* Utilities */
+    --highlight: #1c686c;
+    --dark-border: #444;
+    --pale-border: #d3d3d3;
+    --currentpage-parent-folder: orange;
+    --currentpage-hint: orange;
+
+  
+    /* LoVeHA Rule 1: main */
+    --main-text-link-color: #444;
+    --main-text-visited-color: #777;
+    --main-text-hover-color: #fc0093;
+    --main-text-active-color: #ff0000;
+  
+    /* LoVeHA Rule 2: top nav */
+    --primary-nav-link-color: #444;
+    --primary-nav-visited-color: #777777;
+    --primary-nav-hover-color: #2d2b66;
+    --primary-nav-active-color: #ff0000;
+  
+    /* LoVeHA Rule 3: footer nav */
+    --footer-nav-link-color: #fff;
+    --footer-nav-visited-color: #9e9e9e;
+    --footer-nav-hover-color: #56549d;
+    --footer-nav-active-color: #ff0000;
+  }
+
+aside {background-color: var(--aside-bg-color); }
+
+
+@media screen and (orientation: landscape){
+
+    body {
+        background-color: var(--main-bg-color); 
+
+        /* for testing only */
+        /* background-color: rgb(252, 252, 207); */
+    } 
+}
+
+
+@media only screen and (min-width: 64rem) {
+
+    aside {background-color: var(--body-bg-color); }
+
+}  /* close media query */
+  
+

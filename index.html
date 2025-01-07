@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        iframe {border: 1px solid #444;}
+
+        section > div {
+            border: 1px solid #c8c6c6;
+        }
+
+        section div p {
+            font-weight: bold;
+        }
+
+        section.mobile > div {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #mobile {
+            height: 600px;
+            width: 320px;
+        }
+        #mobile-landscape {
+            height: 320px;
+            width:600px;
+        }
+        #tablet {
+            height: 1024px;
+            width: 768px;
+        }
+        #tablet-landscape {
+            height: 768px;
+            width: 1024px;}
+        #desktop {
+            height: 1536px;
+            width: 2048px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="mobile">
+        <h2>Mobile</h2>
+        <div>    
+            <div>
+                <p>320px width X 600px height</p>
+                <iframe id="mobile" src="content.html" frameborder="0"></iframe>
+            </div>
+            <div>
+                <p>600px width X  320px height</p>
+                <iframe id="mobile-landscape" src="content.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tablet">
+        <h2>Tablet</h2>
+        <div>
+            <iframe id="tablet" src="content.html" frameborder="0"></iframe>
+            <iframe id="tablet-landscape" src="content.html" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <section class="desktop">
+        <h2>Desktop</h2> 
+        <div><iframe id="desktop" src="content.html" frameborder="0"></iframe></div>
+    </section>
+    
+   
+</body>
+</html>

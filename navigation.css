@@ -1,0 +1,56 @@
+button#menu-button {
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    border: none;
+    background-image: url(img/hamburger.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    display: none;
+}
+
+#menu.show-nav {
+    display: block;
+} 
+
+    
+#menu.show-nav {
+    position: absolute;  /* position the menu */
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--body-bg-color);  /* style the dropdown menu */
+    padding: 1rem;
+    margin: 0 auto;
+    border: 1px solid var(--dark-border);
+} 
+
+#menu-button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    padding: 0;
+    background-color: transparent;
+    z-index: 10;
+}
+
+#menu-button:hover {
+    cursor: pointer;
+    }
+
+
+
+@media only screen and (min-width: 64rem) {
+        button#menu-button {
+            display: none;
+        }
+    
+        #menu {
+            display: flex;
+        }
+    }
+    

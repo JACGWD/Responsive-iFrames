@@ -1,0 +1,26 @@
+@import url(./typography.css);
+@import url(./layout.css);
+@import url(./colors.css);
+@import url(./navigation.css);
+
+#logo {
+    width: 2rem;
+    height: auto;
+}
+
+header {
+	background-color: var(--header-bg-color);
+	padding: 0.25rem;
+	color: white;
+	font-weight: bold;
+}
+
+
+    .hide-text {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0;
+    }    
+
+
