@@ -4,10 +4,12 @@
     --body-bg-color: #ffffff;
     --main-bg-color: #fff;
     --header-bg-color: cadetblue;
-    --footer-bg-color: #444;
+
     --aside-bg-color: aliceblue;
     --primary-nav-bg-color: #444;
-    --footer-nav-bg-color: #ffffff;
+
+    --footer-bg-color: #444;
+    --footer-nav-bg-color: #444;
 
 
     /* Text Colors */
@@ -45,6 +47,8 @@
   }
 
 aside {background-color: var(--aside-bg-color); }
+
+footer {background-color: var(--footer-bg-color);}
 
 
 @media screen and (orientation: landscape){

@@ -7,7 +7,14 @@
     <style>
         body {font-family: Arial, Helvetica, sans-serif;}
 
-        iframe {border: 1px solid #444;}
+        iframe {
+            border: 1px solid #444;
+            margin: 2rem 0 2rem 0;
+        }
+
+        iframe:first-child {
+            margin: 2rem 0 2rem 1rem;
+        }
 
         section > div {
             border: 1px solid #c8c6c6;
@@ -50,11 +57,11 @@
         <div>    
             <div>
                 <p>320px width X 600px height</p>
-                <iframe id="mobile" src="content.html" frameborder="0"></iframe>
+                <iframe id="mobile" src="content.html"></iframe>
             </div>
             <div>
                 <p>600px width X  320px height</p>
-                <iframe id="mobile-landscape" src="content.html" frameborder="0"></iframe>
+                <iframe id="mobile-landscape" src="content.html"></iframe>
             </div>
         </div>
     </section>
@@ -62,14 +69,25 @@
     <section class="tablet">
         <h2>Tablet</h2>
         <div>
-            <iframe id="tablet" src="content.html" frameborder="0"></iframe>
-            <iframe id="tablet-landscape" src="content.html" frameborder="0"></iframe>
+            <div>
+                <p>768px width X 1024px height</p>
+            <iframe id="tablet" src="content.html"></iframe>
+        </div>
+
+            <div>
+                <p>1024px width X 768px height</p>
+            <iframe id="tablet-landscape" src="content.html"></iframe>
+        </div>
         </div>
     </section>
 
     <section class="desktop">
         <h2>Desktop</h2> 
-        <div><iframe id="desktop" src="content.html" frameborder="0"></iframe></div>
+        <div>
+            <div>
+                <p>2048px width X 1536px height</p>
+                <iframe id="desktop" src="content.html"></iframe></div>
+            </div>
     </section>
     
    
