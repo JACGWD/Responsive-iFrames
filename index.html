@@ -20,8 +20,12 @@
             border: 1px solid #c8c6c6;
         }
 
-        section div p {
+        section div p:first-child {
             font-weight: bold;
+        }
+
+        section div p {
+            max-width: 70ch;
         }
 
         section.mobile > div {
@@ -57,10 +61,12 @@
         <div>    
             <div>
                 <p>320px width X 600px height</p>
+                <p>In mobile first, there is no media query for this size. It is just the default style rules. You could however, use <span style="color:red">@media only screen and (orientation: portrait)</span> to design for portrait mode only.</p>
                 <iframe id="mobile" src="content.html"></iframe>
             </div>
             <div>
                 <p>600px width X  320px height</p>
+                <p>In mobile first, there is no media query for this size. It is just the default style rules. You could however, use <span style="color:red">@media only screen and (orientation: landscape)</span> to design for landscape mode only.</p>
                 <iframe id="mobile-landscape" src="content.html"></iframe>
             </div>
         </div>
@@ -71,11 +77,15 @@
         <div>
             <div>
                 <p>768px width X 1024px height</p>
+                <p>Use <span style="color:red">@media only screen and (min-width: 48rem)</span> to design for any viewport with a width greater than 48rem (768px).</p>
             <iframe id="tablet" src="content.html"></iframe>
         </div>
 
             <div>
                 <p>1024px width X 768px height</p>
+
+                <p>Use <span style="color:red">@media only screen and (min-width: 48rem) and (orientation: landscape)</span> to design for any viewport with a width greater than 48rem (768px) and in landscape mode.</p>
+
             <iframe id="tablet-landscape" src="content.html"></iframe>
         </div>
         </div>
